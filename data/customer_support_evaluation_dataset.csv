@@ -1,0 +1,301 @@
+id,query,ground_truth,expected_agent,intent
+FAQ-001,How can I ask about account creation?,FAQ,faq,account creation
+FAQ-002,What is the process for account creation?,FAQ,faq,account creation
+FAQ-003,Can you explain account creation?,FAQ,faq,account creation
+FAQ-004,I need help with account creation. What should I do?,FAQ,faq,account creation
+FAQ-005,Is account creation available and how does it work?,FAQ,faq,account creation
+FAQ-006,How can I ask about accepted payment methods?,FAQ,faq,accepted payment methods
+FAQ-007,What is the process for accepted payment methods?,FAQ,faq,accepted payment methods
+FAQ-008,Can you explain accepted payment methods?,FAQ,faq,accepted payment methods
+FAQ-009,I need help with accepted payment methods. What should I do?,FAQ,faq,accepted payment methods
+FAQ-010,Is accepted payment methods available and how does it work?,FAQ,faq,accepted payment methods
+FAQ-011,How can I ask about order tracking?,FAQ,faq,order tracking
+FAQ-012,What is the process for order tracking?,FAQ,faq,order tracking
+FAQ-013,Can you explain order tracking?,FAQ,faq,order tracking
+FAQ-014,I need help with order tracking. What should I do?,FAQ,faq,order tracking
+FAQ-015,Is order tracking available and how does it work?,FAQ,faq,order tracking
+FAQ-016,How can I ask about order cancellation before shipping?,FAQ,faq,order cancellation before shipping
+FAQ-017,What is the process for order cancellation before shipping?,FAQ,faq,order cancellation before shipping
+FAQ-018,Can you explain order cancellation before shipping?,FAQ,faq,order cancellation before shipping
+FAQ-019,I need help with order cancellation before shipping. What should I do?,FAQ,faq,order cancellation before shipping
+FAQ-020,Is order cancellation before shipping available and how does it work?,FAQ,faq,order cancellation before shipping
+FAQ-021,How can I ask about changing shipping address?,FAQ,faq,changing shipping address
+FAQ-022,What is the process for changing shipping address?,FAQ,faq,changing shipping address
+FAQ-023,Can you explain changing shipping address?,FAQ,faq,changing shipping address
+FAQ-024,I need help with changing shipping address. What should I do?,FAQ,faq,changing shipping address
+FAQ-025,Is changing shipping address available and how does it work?,FAQ,faq,changing shipping address
+FAQ-026,How can I ask about gift wrapping?,FAQ,faq,gift wrapping
+FAQ-027,What is the process for gift wrapping?,FAQ,faq,gift wrapping
+FAQ-028,Can you explain gift wrapping?,FAQ,faq,gift wrapping
+FAQ-029,I need help with gift wrapping. What should I do?,FAQ,faq,gift wrapping
+FAQ-030,Is gift wrapping available and how does it work?,FAQ,faq,gift wrapping
+FAQ-031,How can I ask about phone orders?,FAQ,faq,phone orders
+FAQ-032,What is the process for phone orders?,FAQ,faq,phone orders
+FAQ-033,Can you explain phone orders?,FAQ,faq,phone orders
+FAQ-034,I need help with phone orders. What should I do?,FAQ,faq,phone orders
+FAQ-035,Is phone orders available and how does it work?,FAQ,faq,phone orders
+FAQ-036,How can I ask about guest checkout?,FAQ,faq,guest checkout
+FAQ-037,What is the process for guest checkout?,FAQ,faq,guest checkout
+FAQ-038,Can you explain guest checkout?,FAQ,faq,guest checkout
+FAQ-039,I need help with guest checkout. What should I do?,FAQ,faq,guest checkout
+FAQ-040,Is guest checkout available and how does it work?,FAQ,faq,guest checkout
+FAQ-041,How can I ask about multiple promo codes?,FAQ,faq,multiple promo codes
+FAQ-042,What is the process for multiple promo codes?,FAQ,faq,multiple promo codes
+FAQ-043,Can you explain multiple promo codes?,FAQ,faq,multiple promo codes
+FAQ-044,I need help with multiple promo codes. What should I do?,FAQ,faq,multiple promo codes
+FAQ-045,Is multiple promo codes available and how does it work?,FAQ,faq,multiple promo codes
+FAQ-046,How can I ask about wrong item received?,FAQ,faq,wrong item received
+FAQ-047,What is the process for wrong item received?,FAQ,faq,wrong item received
+FAQ-048,Can you explain wrong item received?,FAQ,faq,wrong item received
+FAQ-049,I need help with wrong item received. What should I do?,FAQ,faq,wrong item received
+FAQ-050,Is wrong item received available and how does it work?,FAQ,faq,wrong item received
+FAQ-051,How can I ask about out-of-stock notifications?,FAQ,faq,out-of-stock notifications
+FAQ-052,What is the process for out-of-stock notifications?,FAQ,faq,out-of-stock notifications
+FAQ-053,Can you explain out-of-stock notifications?,FAQ,faq,out-of-stock notifications
+FAQ-054,I need help with out-of-stock notifications. What should I do?,FAQ,faq,out-of-stock notifications
+FAQ-055,Is out-of-stock notifications available and how does it work?,FAQ,faq,out-of-stock notifications
+FAQ-056,How can I ask about newsletter content?,FAQ,faq,newsletter content
+FAQ-057,What is the process for newsletter content?,FAQ,faq,newsletter content
+FAQ-058,Can you explain newsletter content?,FAQ,faq,newsletter content
+FAQ-059,I need help with newsletter content. What should I do?,FAQ,faq,newsletter content
+FAQ-060,Is newsletter content available and how does it work?,FAQ,faq,newsletter content
+FAQ-061,How can I ask about live chat support?,FAQ,faq,live chat support
+FAQ-062,What is the process for live chat support?,FAQ,faq,live chat support
+FAQ-063,Can you explain live chat support?,FAQ,faq,live chat support
+FAQ-064,I need help with live chat support. What should I do?,FAQ,faq,live chat support
+FAQ-065,Is live chat support available and how does it work?,FAQ,faq,live chat support
+FAQ-066,How can I ask about gift delivery?,FAQ,faq,gift delivery
+FAQ-067,What is the process for gift delivery?,FAQ,faq,gift delivery
+FAQ-068,Can you explain gift delivery?,FAQ,faq,gift delivery
+FAQ-069,I need help with gift delivery. What should I do?,FAQ,faq,gift delivery
+FAQ-070,Is gift delivery available and how does it work?,FAQ,faq,gift delivery
+FAQ-071,How can I ask about discount code not working?,FAQ,faq,discount code not working
+FAQ-072,What is the process for discount code not working?,FAQ,faq,discount code not working
+FAQ-073,Can you explain discount code not working?,FAQ,faq,discount code not working
+FAQ-074,I need help with discount code not working. What should I do?,FAQ,faq,discount code not working
+FAQ-075,Is discount code not working available and how does it work?,FAQ,faq,discount code not working
+FAQ-076,How can I ask about product installation?,FAQ,faq,product installation
+FAQ-077,What is the process for product installation?,FAQ,faq,product installation
+FAQ-078,Can you explain product installation?,FAQ,faq,product installation
+FAQ-079,I need help with product installation. What should I do?,FAQ,faq,product installation
+FAQ-080,Is product installation available and how does it work?,FAQ,faq,product installation
+FAQ-081,How can I ask about order invoice?,FAQ,faq,order invoice
+FAQ-082,What is the process for order invoice?,FAQ,faq,order invoice
+FAQ-083,Can you explain order invoice?,FAQ,faq,order invoice
+FAQ-084,I need help with order invoice. What should I do?,FAQ,faq,order invoice
+FAQ-085,Is order invoice available and how does it work?,FAQ,faq,order invoice
+FAQ-086,How can I ask about custom orders?,FAQ,faq,custom orders
+FAQ-087,What is the process for custom orders?,FAQ,faq,custom orders
+FAQ-088,Can you explain custom orders?,FAQ,faq,custom orders
+FAQ-089,I need help with custom orders. What should I do?,FAQ,faq,custom orders
+FAQ-090,Is custom orders available and how does it work?,FAQ,faq,custom orders
+FAQ-091,How can I ask about pre-order products?,FAQ,faq,pre-order products
+FAQ-092,What is the process for pre-order products?,FAQ,faq,pre-order products
+FAQ-093,Can you explain pre-order products?,FAQ,faq,pre-order products
+FAQ-094,I need help with pre-order products. What should I do?,FAQ,faq,pre-order products
+FAQ-095,Is pre-order products available and how does it work?,FAQ,faq,pre-order products
+FAQ-096,How can I ask about price adjustment after purchase?,FAQ,faq,price adjustment after purchase
+FAQ-097,What is the process for price adjustment after purchase?,FAQ,faq,price adjustment after purchase
+FAQ-098,Can you explain price adjustment after purchase?,FAQ,faq,price adjustment after purchase
+FAQ-099,I need help with price adjustment after purchase. What should I do?,FAQ,faq,price adjustment after purchase
+FAQ-100,Is price adjustment after purchase available and how does it work?,FAQ,faq,price adjustment after purchase
+RAG-001,What does the marketplace policy say about human support hours?,RAG,rag,human support hours
+RAG-002,Can you tell me the policy for human support hours?,RAG,rag,human support hours
+RAG-003,What are the rules regarding human support hours?,RAG,rag,human support hours
+RAG-004,How is human support hours handled under the current policy?,RAG,rag,human support hours
+RAG-005,What should a customer know about human support hours?,RAG,rag,human support hours
+RAG-006,What does the marketplace policy say about AI support availability?,RAG,rag,AI support availability
+RAG-007,Can you tell me the policy for AI support availability?,RAG,rag,AI support availability
+RAG-008,What are the rules regarding AI support availability?,RAG,rag,AI support availability
+RAG-009,How is AI support availability handled under the current policy?,RAG,rag,AI support availability
+RAG-010,What should a customer know about AI support availability?,RAG,rag,AI support availability
+RAG-011,What does the marketplace policy say about standard delivery time?,RAG,rag,standard delivery time
+RAG-012,Can you tell me the policy for standard delivery time?,RAG,rag,standard delivery time
+RAG-013,What are the rules regarding standard delivery time?,RAG,rag,standard delivery time
+RAG-014,How is standard delivery time handled under the current policy?,RAG,rag,standard delivery time
+RAG-015,What should a customer know about standard delivery time?,RAG,rag,standard delivery time
+RAG-016,What does the marketplace policy say about priority delivery time?,RAG,rag,priority delivery time
+RAG-017,Can you tell me the policy for priority delivery time?,RAG,rag,priority delivery time
+RAG-018,What are the rules regarding priority delivery time?,RAG,rag,priority delivery time
+RAG-019,How is priority delivery time handled under the current policy?,RAG,rag,priority delivery time
+RAG-020,What should a customer know about priority delivery time?,RAG,rag,priority delivery time
+RAG-021,What does the marketplace policy say about international delivery time?,RAG,rag,international delivery time
+RAG-022,Can you tell me the policy for international delivery time?,RAG,rag,international delivery time
+RAG-023,What are the rules regarding international delivery time?,RAG,rag,international delivery time
+RAG-024,How is international delivery time handled under the current policy?,RAG,rag,international delivery time
+RAG-025,What should a customer know about international delivery time?,RAG,rag,international delivery time
+RAG-026,What does the marketplace policy say about failed delivery attempts?,RAG,rag,failed delivery attempts
+RAG-027,Can you tell me the policy for failed delivery attempts?,RAG,rag,failed delivery attempts
+RAG-028,What are the rules regarding failed delivery attempts?,RAG,rag,failed delivery attempts
+RAG-029,How is failed delivery attempts handled under the current policy?,RAG,rag,failed delivery attempts
+RAG-030,What should a customer know about failed delivery attempts?,RAG,rag,failed delivery attempts
+RAG-031,What does the marketplace policy say about lost package handling?,RAG,rag,lost package handling
+RAG-032,Can you tell me the policy for lost package handling?,RAG,rag,lost package handling
+RAG-033,What are the rules regarding lost package handling?,RAG,rag,lost package handling
+RAG-034,How is lost package handling handled under the current policy?,RAG,rag,lost package handling
+RAG-035,What should a customer know about lost package handling?,RAG,rag,lost package handling
+RAG-036,What does the marketplace policy say about 7-day return window?,RAG,rag,7-day return window
+RAG-037,Can you tell me the policy for 7-day return window?,RAG,rag,7-day return window
+RAG-038,What are the rules regarding 7-day return window?,RAG,rag,7-day return window
+RAG-039,How is 7-day return window handled under the current policy?,RAG,rag,7-day return window
+RAG-040,What should a customer know about 7-day return window?,RAG,rag,7-day return window
+RAG-041,What does the marketplace policy say about return condition requirements?,RAG,rag,return condition requirements
+RAG-042,Can you tell me the policy for return condition requirements?,RAG,rag,return condition requirements
+RAG-043,What are the rules regarding return condition requirements?,RAG,rag,return condition requirements
+RAG-044,How is return condition requirements handled under the current policy?,RAG,rag,return condition requirements
+RAG-045,What should a customer know about return condition requirements?,RAG,rag,return condition requirements
+RAG-046,What does the marketplace policy say about non-returnable items?,RAG,rag,non-returnable items
+RAG-047,Can you tell me the policy for non-returnable items?,RAG,rag,non-returnable items
+RAG-048,What are the rules regarding non-returnable items?,RAG,rag,non-returnable items
+RAG-049,How is non-returnable items handled under the current policy?,RAG,rag,non-returnable items
+RAG-050,What should a customer know about non-returnable items?,RAG,rag,non-returnable items
+RAG-051,What does the marketplace policy say about 48-hour damaged or incorrect item reporting?,RAG,rag,48-hour damaged or incorrect item reporting
+RAG-052,Can you tell me the policy for 48-hour damaged or incorrect item reporting?,RAG,rag,48-hour damaged or incorrect item reporting
+RAG-053,What are the rules regarding 48-hour damaged or incorrect item reporting?,RAG,rag,48-hour damaged or incorrect item reporting
+RAG-054,How is 48-hour damaged or incorrect item reporting handled under the current policy?,RAG,rag,48-hour damaged or incorrect item reporting
+RAG-055,What should a customer know about 48-hour damaged or incorrect item reporting?,RAG,rag,48-hour damaged or incorrect item reporting
+RAG-056,What does the marketplace policy say about refund processing?,RAG,rag,refund processing
+RAG-057,Can you tell me the policy for refund processing?,RAG,rag,refund processing
+RAG-058,What are the rules regarding refund processing?,RAG,rag,refund processing
+RAG-059,How is refund processing handled under the current policy?,RAG,rag,refund processing
+RAG-060,What should a customer know about refund processing?,RAG,rag,refund processing
+RAG-061,What does the marketplace policy say about refund destination?,RAG,rag,refund destination
+RAG-062,Can you tell me the policy for refund destination?,RAG,rag,refund destination
+RAG-063,What are the rules regarding refund destination?,RAG,rag,refund destination
+RAG-064,How is refund destination handled under the current policy?,RAG,rag,refund destination
+RAG-065,What should a customer know about refund destination?,RAG,rag,refund destination
+RAG-066,What does the marketplace policy say about marketplace credit?,RAG,rag,marketplace credit
+RAG-067,Can you tell me the policy for marketplace credit?,RAG,rag,marketplace credit
+RAG-068,What are the rules regarding marketplace credit?,RAG,rag,marketplace credit
+RAG-069,How is marketplace credit handled under the current policy?,RAG,rag,marketplace credit
+RAG-070,What should a customer know about marketplace credit?,RAG,rag,marketplace credit
+RAG-071,What does the marketplace policy say about order confirmation?,RAG,rag,order confirmation
+RAG-072,Can you tell me the policy for order confirmation?,RAG,rag,order confirmation
+RAG-073,What are the rules regarding order confirmation?,RAG,rag,order confirmation
+RAG-074,How is order confirmation handled under the current policy?,RAG,rag,order confirmation
+RAG-075,What should a customer know about order confirmation?,RAG,rag,order confirmation
+RAG-076,What does the marketplace policy say about payment verification?,RAG,rag,payment verification
+RAG-077,Can you tell me the policy for payment verification?,RAG,rag,payment verification
+RAG-078,What are the rules regarding payment verification?,RAG,rag,payment verification
+RAG-079,How is payment verification handled under the current policy?,RAG,rag,payment verification
+RAG-080,What should a customer know about payment verification?,RAG,rag,payment verification
+RAG-081,What does the marketplace policy say about automatic order cancellation?,RAG,rag,automatic order cancellation
+RAG-082,Can you tell me the policy for automatic order cancellation?,RAG,rag,automatic order cancellation
+RAG-083,What are the rules regarding automatic order cancellation?,RAG,rag,automatic order cancellation
+RAG-084,How is automatic order cancellation handled under the current policy?,RAG,rag,automatic order cancellation
+RAG-085,What should a customer know about automatic order cancellation?,RAG,rag,automatic order cancellation
+RAG-086,What does the marketplace policy say about preferred support language?,RAG,rag,preferred support language
+RAG-087,Can you tell me the policy for preferred support language?,RAG,rag,preferred support language
+RAG-088,What are the rules regarding preferred support language?,RAG,rag,preferred support language
+RAG-089,How is preferred support language handled under the current policy?,RAG,rag,preferred support language
+RAG-090,What should a customer know about preferred support language?,RAG,rag,preferred support language
+RAG-091,What does the marketplace policy say about data deletion?,RAG,rag,data deletion
+RAG-092,Can you tell me the policy for data deletion?,RAG,rag,data deletion
+RAG-093,What are the rules regarding data deletion?,RAG,rag,data deletion
+RAG-094,How is data deletion handled under the current policy?,RAG,rag,data deletion
+RAG-095,What should a customer know about data deletion?,RAG,rag,data deletion
+RAG-096,What does the marketplace policy say about account lockout and security?,RAG,rag,account lockout and security
+RAG-097,Can you tell me the policy for account lockout and security?,RAG,rag,account lockout and security
+RAG-098,What are the rules regarding account lockout and security?,RAG,rag,account lockout and security
+RAG-099,How is account lockout and security handled under the current policy?,RAG,rag,account lockout and security
+RAG-100,What should a customer know about account lockout and security?,RAG,rag,account lockout and security
+ESC-001,I need human help with hacked account.,ESCALATION,escalation,hacked account
+ESC-002,Please escalate my hacked account to a support representative.,ESCALATION,escalation,hacked account
+ESC-003,Can a specialist handle my hacked account?,ESCALATION,escalation,hacked account
+ESC-004,My issue involves hacked account and needs human support.,ESCALATION,escalation,hacked account
+ESC-005,I need this hacked account investigated by a person.,ESCALATION,escalation,hacked account
+ESC-006,I need human help with unauthorized transaction.,ESCALATION,escalation,unauthorized transaction
+ESC-007,Please escalate my unauthorized transaction to a support representative.,ESCALATION,escalation,unauthorized transaction
+ESC-008,Can a specialist handle my unauthorized transaction?,ESCALATION,escalation,unauthorized transaction
+ESC-009,My issue involves unauthorized transaction and needs human support.,ESCALATION,escalation,unauthorized transaction
+ESC-010,I need this unauthorized transaction investigated by a person.,ESCALATION,escalation,unauthorized transaction
+ESC-011,I need human help with suspected scam.,ESCALATION,escalation,suspected scam
+ESC-012,Please escalate my suspected scam to a support representative.,ESCALATION,escalation,suspected scam
+ESC-013,Can a specialist handle my suspected scam?,ESCALATION,escalation,suspected scam
+ESC-014,My issue involves suspected scam and needs human support.,ESCALATION,escalation,suspected scam
+ESC-015,I need this suspected scam investigated by a person.,ESCALATION,escalation,suspected scam
+ESC-016,I need human help with identity concern.,ESCALATION,escalation,identity concern
+ESC-017,Please escalate my identity concern to a support representative.,ESCALATION,escalation,identity concern
+ESC-018,Can a specialist handle my identity concern?,ESCALATION,escalation,identity concern
+ESC-019,My issue involves identity concern and needs human support.,ESCALATION,escalation,identity concern
+ESC-020,I need this identity concern investigated by a person.,ESCALATION,escalation,identity concern
+ESC-021,I need human help with legal request.,ESCALATION,escalation,legal request
+ESC-022,Please escalate my legal request to a support representative.,ESCALATION,escalation,legal request
+ESC-023,Can a specialist handle my legal request?,ESCALATION,escalation,legal request
+ESC-024,My issue involves legal request and needs human support.,ESCALATION,escalation,legal request
+ESC-025,I need this legal request investigated by a person.,ESCALATION,escalation,legal request
+ESC-026,I need human help with request for a human representative.,ESCALATION,escalation,request for a human representative
+ESC-027,Please escalate my request for a human representative to a support representative.,ESCALATION,escalation,request for a human representative
+ESC-028,Can a specialist handle my request for a human representative?,ESCALATION,escalation,request for a human representative
+ESC-029,My issue involves request for a human representative and needs human support.,ESCALATION,escalation,request for a human representative
+ESC-030,I need this request for a human representative investigated by a person.,ESCALATION,escalation,request for a human representative
+ESC-031,I need human help with account investigation.,ESCALATION,escalation,account investigation
+ESC-032,Please escalate my account investigation to a support representative.,ESCALATION,escalation,account investigation
+ESC-033,Can a specialist handle my account investigation?,ESCALATION,escalation,account investigation
+ESC-034,My issue involves account investigation and needs human support.,ESCALATION,escalation,account investigation
+ESC-035,I need this account investigation investigated by a person.,ESCALATION,escalation,account investigation
+ESC-036,I need human help with payment review by a specialist.,ESCALATION,escalation,payment review by a specialist
+ESC-037,Please escalate my payment review by a specialist to a support representative.,ESCALATION,escalation,payment review by a specialist
+ESC-038,Can a specialist handle my payment review by a specialist?,ESCALATION,escalation,payment review by a specialist
+ESC-039,My issue involves payment review by a specialist and needs human support.,ESCALATION,escalation,payment review by a specialist
+ESC-040,I need this payment review by a specialist investigated by a person.,ESCALATION,escalation,payment review by a specialist
+ESC-041,I need human help with technical diagnosis by a specialist.,ESCALATION,escalation,technical diagnosis by a specialist
+ESC-042,Please escalate my technical diagnosis by a specialist to a support representative.,ESCALATION,escalation,technical diagnosis by a specialist
+ESC-043,Can a specialist handle my technical diagnosis by a specialist?,ESCALATION,escalation,technical diagnosis by a specialist
+ESC-044,My issue involves technical diagnosis by a specialist and needs human support.,ESCALATION,escalation,technical diagnosis by a specialist
+ESC-045,I need this technical diagnosis by a specialist investigated by a person.,ESCALATION,escalation,technical diagnosis by a specialist
+ESC-046,I need human help with fraud report.,ESCALATION,escalation,fraud report
+ESC-047,Please escalate my fraud report to a support representative.,ESCALATION,escalation,fraud report
+ESC-048,Can a specialist handle my fraud report?,ESCALATION,escalation,fraud report
+ESC-049,My issue involves fraud report and needs human support.,ESCALATION,escalation,fraud report
+ESC-050,I need this fraud report investigated by a person.,ESCALATION,escalation,fraud report
+ESC-051,I need human help with account takeover.,ESCALATION,escalation,account takeover
+ESC-052,Please escalate my account takeover to a support representative.,ESCALATION,escalation,account takeover
+ESC-053,Can a specialist handle my account takeover?,ESCALATION,escalation,account takeover
+ESC-054,My issue involves account takeover and needs human support.,ESCALATION,escalation,account takeover
+ESC-055,I need this account takeover investigated by a person.,ESCALATION,escalation,account takeover
+ESC-056,I need human help with suspicious account activity.,ESCALATION,escalation,suspicious account activity
+ESC-057,Please escalate my suspicious account activity to a support representative.,ESCALATION,escalation,suspicious account activity
+ESC-058,Can a specialist handle my suspicious account activity?,ESCALATION,escalation,suspicious account activity
+ESC-059,My issue involves suspicious account activity and needs human support.,ESCALATION,escalation,suspicious account activity
+ESC-060,I need this suspicious account activity investigated by a person.,ESCALATION,escalation,suspicious account activity
+ESC-061,I need human help with serious payment problem.,ESCALATION,escalation,serious payment problem
+ESC-062,Please escalate my serious payment problem to a support representative.,ESCALATION,escalation,serious payment problem
+ESC-063,Can a specialist handle my serious payment problem?,ESCALATION,escalation,serious payment problem
+ESC-064,My issue involves serious payment problem and needs human support.,ESCALATION,escalation,serious payment problem
+ESC-065,I need this serious payment problem investigated by a person.,ESCALATION,escalation,serious payment problem
+ESC-066,I need human help with complex technical issue.,ESCALATION,escalation,complex technical issue
+ESC-067,Please escalate my complex technical issue to a support representative.,ESCALATION,escalation,complex technical issue
+ESC-068,Can a specialist handle my complex technical issue?,ESCALATION,escalation,complex technical issue
+ESC-069,My issue involves complex technical issue and needs human support.,ESCALATION,escalation,complex technical issue
+ESC-070,I need this complex technical issue investigated by a person.,ESCALATION,escalation,complex technical issue
+ESC-071,I need human help with security incident investigation.,ESCALATION,escalation,security incident investigation
+ESC-072,Please escalate my security incident investigation to a support representative.,ESCALATION,escalation,security incident investigation
+ESC-073,Can a specialist handle my security incident investigation?,ESCALATION,escalation,security incident investigation
+ESC-074,My issue involves security incident investigation and needs human support.,ESCALATION,escalation,security incident investigation
+ESC-075,I need this security incident investigation investigated by a person.,ESCALATION,escalation,security incident investigation
+ESC-076,I need human help with payment investigation.,ESCALATION,escalation,payment investigation
+ESC-077,Please escalate my payment investigation to a support representative.,ESCALATION,escalation,payment investigation
+ESC-078,Can a specialist handle my payment investigation?,ESCALATION,escalation,payment investigation
+ESC-079,My issue involves payment investigation and needs human support.,ESCALATION,escalation,payment investigation
+ESC-080,I need this payment investigation investigated by a person.,ESCALATION,escalation,payment investigation
+ESC-081,I need human help with identity investigation.,ESCALATION,escalation,identity investigation
+ESC-082,Please escalate my identity investigation to a support representative.,ESCALATION,escalation,identity investigation
+ESC-083,Can a specialist handle my identity investigation?,ESCALATION,escalation,identity investigation
+ESC-084,My issue involves identity investigation and needs human support.,ESCALATION,escalation,identity investigation
+ESC-085,I need this identity investigation investigated by a person.,ESCALATION,escalation,identity investigation
+ESC-086,I need human help with legal escalation.,ESCALATION,escalation,legal escalation
+ESC-087,Please escalate my legal escalation to a support representative.,ESCALATION,escalation,legal escalation
+ESC-088,Can a specialist handle my legal escalation?,ESCALATION,escalation,legal escalation
+ESC-089,My issue involves legal escalation and needs human support.,ESCALATION,escalation,legal escalation
+ESC-090,I need this legal escalation investigated by a person.,ESCALATION,escalation,legal escalation
+ESC-091,I need human help with serious account security case.,ESCALATION,escalation,serious account security case
+ESC-092,Please escalate my serious account security case to a support representative.,ESCALATION,escalation,serious account security case
+ESC-093,Can a specialist handle my serious account security case?,ESCALATION,escalation,serious account security case
+ESC-094,My issue involves serious account security case and needs human support.,ESCALATION,escalation,serious account security case
+ESC-095,I need this serious account security case investigated by a person.,ESCALATION,escalation,serious account security case
+ESC-096,I need human help with unresolved specialist support issue.,ESCALATION,escalation,unresolved specialist support issue
+ESC-097,Please escalate my unresolved specialist support issue to a support representative.,ESCALATION,escalation,unresolved specialist support issue
+ESC-098,Can a specialist handle my unresolved specialist support issue?,ESCALATION,escalation,unresolved specialist support issue
+ESC-099,My issue involves unresolved specialist support issue and needs human support.,ESCALATION,escalation,unresolved specialist support issue
+ESC-100,I need this unresolved specialist support issue investigated by a person.,ESCALATION,escalation,unresolved specialist support issue

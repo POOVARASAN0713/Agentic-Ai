@@ -1,0 +1,57 @@
+id,question,answer,category
+1,How do I reset my password?,You can reset your password by clicking on 'Forgot Password' on the login screen and following the instructions sent to your registered email.,account
+2,How do I change my registered email address?,To update your email address go to Account Settings > Profile > Edit Email. A verification code will be sent to your new email.,account
+3,Can I create multiple accounts with the same email?,No each account requires a unique registered email address for security and identity verification.,account
+4,How do I delete my account?,You can request account deletion under Account Settings > Privacy > Delete Account. Account deletion is permanent after 30 days.,account
+5,Why is my account locked?,Accounts are automatically locked after 5 consecutive failed login attempts to protect against unauthorized access.,account
+6,How do I unlock my locked account?,Wait 15 minutes for automatic unlock or click 'Unlock Account' on the login page to verify your identity via email.,account
+7,How can I update my phone number?,Go to Profile Settings > Personal Info > Phone Number and enter your new number. You will receive an OTP for confirmation.,account
+8,Where can I see my past login activity?,You can inspect active sessions and device history under Account Settings > Security > Active Sessions.,account
+9,What payment methods do you accept?,We accept Visa Mastercard American Express PayPal UPI net banking and major debit cards.,payment
+10,Why was my credit card payment declined?,Common reasons include insufficient funds incorrect CVV/expiry date or fraud prevention blocks from your issuing bank.,payment
+11,Is it safe to store my card details on your platform?,Yes all payment processing is PCI-DSS Level 1 compliant and stored using end-to-end tokenization.,payment
+12,How can I download a payment invoice?,Navigate to Billing > Order History click on your specific order and click 'Download Tax Invoice'.,payment
+13,Will I receive a payment confirmation email?,Yes an automated receipt and tax invoice are emailed immediately following every successful payment.,payment
+14,Do you support automatic recurring payments?,Yes recurring billing can be enabled for subscription plans under Billing > Subscription Settings.,payment
+15,Can I pay using two different payment methods for one order?,Currently split payment between two separate payment methods for a single order is not supported.,payment
+16,What should I do if I was charged twice for one order?,If a duplicate charge appears on your statement contact support with your transaction reference for an instant reversal.,payment
+17,What is your standard refund policy?,We offer a full refund on eligible products within 7 calendar days of delivery provided the item is unused and in original packaging.,refund
+18,How long does it take to process a refund?,Once approved refunds are processed within 3-5 business days back to your original payment method.,refund
+19,How can I check my refund status?,Track refund progress in real-time under Billing > Refunds & Credits or via the link in your refund confirmation email.,refund
+20,Are shipping costs refundable?,Original shipping charges are non-refundable unless the return is due to our error or a defective item.,refund
+21,Can I get a refund if I bought during a clearance sale?,Clearance items marked 'Final Sale' are non-refundable unless damaged or defective upon arrival.,refund
+22,What documents are required to claim a refund for a damaged item?,You must provide your order ID photos of the damaged item and the shipping label within 48 hours of delivery.,refund
+23,Do you offer instant store credit refunds?,Yes you can opt for instant Store Credit instead of original payment method refund for immediate store purchases.,refund
+24,What happens if my refund fails to process?,If your bank rejects the credit our finance team will contact you to arrange an alternative direct transfer.,refund
+25,How long does standard delivery take?,Standard delivery takes 3 to 5 business days depending on your delivery location and carrier availability.,delivery
+26,Do you offer express or next-day shipping?,Yes express delivery (1-2 business days) is available at checkout for eligible postal codes.,delivery
+27,How do I track my order shipment?,You will receive a shipment notification email with a direct carrier tracking link once your order leaves our warehouse.,delivery
+28,What should I do if my package says delivered but I haven't received it?,Check with household members or neighbors first. If still missing contact support within 48 hours to open a trace.,delivery
+29,Do you ship internationally?,Yes we ship to select international countries. Shipping tariffs and import duties are calculated at checkout.,delivery
+30,Can I change my shipping address after placing an order?,Address modifications can be made within 1 hour of placing the order via Orders > Modify Address.,delivery
+31,What happens if I am not home during delivery?,The courier partner will make up to 3 delivery attempts before returning the shipment to our fulfillment center.,delivery
+32,Why is my order shipment delayed?,Delays may occur due to severe weather carrier backlogs public holidays or incomplete shipping addresses.,delivery
+33,How do I cancel an order?,Go to My Orders select the active order and click 'Cancel Order' before it enters the shipping phase.,cancellation
+34,Can I cancel an order after it has shipped?,Orders already dispatched cannot be canceled directly but can be returned using our hassle-free return portal.,cancellation
+35,Is there a fee for canceling an order?,No order cancellations made prior to dispatch incur zero cancellation fees.,cancellation
+36,How quickly will my canceled order money be returned?,Cancellations trigger an immediate payment release taking 2-4 business days to reflect on your account.,cancellation
+37,Can I modify item quantities in an existing order?,Item quantities cannot be edited once an order is placed; you must cancel the order and place a new one.,cancellation
+38,What happens if a seller cancels my order due to stock out?,If an item becomes out of stock you will be notified immediately and issued a 100% full refund plus a discount coupon.,cancellation
+39,How do I enable Two-Factor Authentication (2FA)?,Navigate to Account Settings > Security > Two-Factor Authentication and scan the QR code using your authenticator app.,security
+40,What should I do if I suspect unauthorized activity on my account?,Immediately log out all active sessions under Security settings and trigger a password reset.,security
+41,How is my personal information protected?,We adhere to strict GDPR and data privacy standards using AES-256 encryption for stored user data.,security
+42,Will customer support ever ask for my password?,No support representatives will NEVER ask for your account password OTP or full credit card number.,security
+43,How do I report a security vulnerability or bug?,Please submit technical security findings to security@example.com for evaluation by our engineering team.,security
+44,Why did I receive a security alert email?,Security alerts are sent whenever a login attempt is detected from a new location browser or unrecognized device.,security
+45,The mobile app keeps crashing. How do I fix it?,Ensure you have the latest app version installed clear app cache or try reinstalling the application.,technical
+46,Supported web browsers for the web portal?,Our platform supports Google Chrome Mozilla Firefox Apple Safari and Microsoft Edge (latest 2 versions).,technical
+47,Why am I getting error code 500 on checkout?,Error code 500 indicates a temporary server glitch. Please clear cookies and refresh your browser.,technical
+48,How do I clear browser cache and cookies?,In Chrome press Ctrl+Shift+Delete (Cmd+Shift+Delete on Mac) select 'Cached images and files' and click Clear Data.,technical
+49,Why am I unable to upload document attachments?,Ensure your file is in PDF PNG or JPG format and under 10MB in total size.,technical
+50,What are your customer support working hours?,Our AI assistant is available 24/7. Human support representatives operate Monday to Friday 9 AM - 8 PM EST.,general
+55,How long is customer support available?,Our AI customer support assistant is available 24 hours a day and 7 days a week. Human support representatives are available Monday to Friday from 9 AM to 8 PM EST.,general
+56,Is the support system AI or human?,The online support system uses AI for 24/7 assistance. Human support representatives are available Monday to Friday from 9 AM to 8 PM EST for escalated cases.,general
+51,How can I speak to a human customer support agent?,You can request a human transfer anytime by typing 'connect me to a human representative' or clicking Escalate.,general
+52,Where is your corporate headquarters located?,Our global customer support office is headquartered in Tech Park, Suite 400, Innovation City.,general
+53,How can I submit product feedback or feature suggestions?,We welcome feedback! Submit your suggestions via the Feedback button in your account dashboard.,general
+54,Where can I view terms of service and user agreements?,Full terms of service legal policies and user agreements are accessible at the footer of our web page.,general

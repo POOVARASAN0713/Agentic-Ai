@@ -1,0 +1,8 @@
+[
+  {"query": "How do I reset my password?", "expected_route": "faq"},
+  {"query": "What is the refund window for returned products?", "expected_route": "rag"},
+  {"query": "What is the warranty coverage period?", "expected_route": "rag"},
+  {"query": "I want to speak to a human agent.", "expected_route": "escalation"},
+  {"query": "There is an unauthorized charge on my account.", "expected_route": "escalation"},
+  {"query": "What are the rules for deep space exploration?", "expected_route": "escalation"}
+]
