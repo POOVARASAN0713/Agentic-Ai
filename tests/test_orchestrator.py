@@ -58,6 +58,36 @@ def test_ai_support_policy_question_uses_rag():
     assert "24 hours" in response["answer"]
 
 
+def test_policy_questions_are_not_routed_to_faq():
+    calls = []
+
+    def faq(_query):
+        calls.append("faq")
+        return {"agent": "faq", "answer": "faq", "confidence": 1.0, "should_escalate": False}
+
+    def rag(query):
+        calls.append("rag")
+        return {
+            "agent": "rag",
+            "answer": f"policy answer for {query}",
+            "confidence": 0.9,
+            "sources": ["online_marketplace_policy.txt"],
+            "should_escalate": False,
+        }
+
+    orchestrator = SupportOrchestrator(faq_processor=faq, rag_processor=rag)
+    for query in (
+        "What is the warranty coverage period for hardware products?",
+        "What is the standard refund policy?",
+        "What documents are required for a damaged item refund?",
+    ):
+        response = orchestrator.process(query)
+        assert response["route"] == "rag"
+        assert response["agent"] == "rag"
+
+    assert calls == ["rag", "rag", "rag"]
+
+
 def test_faq_success_stops_before_rag():
     calls = []
 
@@ -110,7 +140,7 @@ def test_low_confidence_path_uses_rag_then_escalates():
 
     response = SupportOrchestrator(faq, rag, escalation).process("Unknown policy question")
 
-    assert calls == ["faq", "rag", "escalation"]
+    assert calls == ["rag", "escalation"]
     assert response["agent"] == "escalation"
     assert response["route"] == "escalation"
     assert response["guardrail_passed"] is True

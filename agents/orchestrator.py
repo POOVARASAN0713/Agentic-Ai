@@ -94,10 +94,29 @@ class SupportOrchestrator:
             }
 
         query_lower = query.lower()
+        policy_markers = (
+            "policy",
+            "warranty",
+            "coverage",
+            "eligibility",
+            "rules",
+            "terms",
+            "time limit",
+            "timeframe",
+            "required documents",
+            "documents are required",
+            "requirements",
+            "exclusions",
+            "working hours",
+            "support hours",
+        )
+        is_policy_question = any(marker in query_lower for marker in policy_markers)
         is_support_availability_question = (
             "support" in query_lower
             and any(term in query_lower for term in ("ai", "human", "duration", "available", "hours", "system"))
         )
+        if is_policy_question:
+            return {"route": "rag", "trace": ["classify:policy_candidate"]}
         if is_support_availability_question and "policy" in query_lower:
             return {"route": "rag", "trace": ["classify:policy_candidate"]}
         if is_support_availability_question:
