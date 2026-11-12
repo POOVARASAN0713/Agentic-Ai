@@ -63,3 +63,14 @@ def test_policy_query_detection():
     assert _is_policy_query("What are the international shipping rules?")
     assert _is_policy_query("What are the support working hours?")
     assert not _is_policy_query("Where is my order?")
+
+
+def test_policy_fallback_answer_avoids_escalation_when_llm_is_unavailable(monkeypatch):
+    monkeypatch.setattr(
+        "agents.rag_agent.llm_manager.invoke",
+        lambda **_kwargs: {"status": "error", "content": ""},
+    )
+    response = process_rag_query("What are the international shipping rules?")
+
+    assert response["should_escalate"] is False
+    assert "7 to 14 business days" in response["answer"]

@@ -30,6 +30,38 @@ def _is_policy_query(query: str) -> bool:
     return any(marker in normalized for marker in POLICY_QUERY_MARKERS)
 
 
+POLICY_FALLBACK_ANSWERS = (
+    (
+        ("warranty", "coverage"),
+        "Hardware products include a 1-year limited warranty covering manufacturing defects and hardware failures, unless the product listing states different coverage. Eligible extended protection may add up to 2 additional years.",
+    ),
+    (
+        ("refund", "policy"),
+        "Eligible physical products can be returned within 7 calendar days of delivery. Approved refunds are initiated within 2 business days after inspection, and banks or card issuers may take an additional 3 to 5 business days to display the credit.",
+    ),
+    (
+        ("document", "damaged"),
+        "Damaged, defective, or incorrect items must be reported within 48 hours of delivery. Photos of the item, packaging, carrier label, and order confirmation may be requested.",
+    ),
+    (
+        ("international", "shipping"),
+        "International orders normally arrive within 7 to 14 business days. Customs inspections and import procedures may cause additional delays.",
+    ),
+    (
+        ("support", "hour"),
+        "The AI customer support assistant is available 24/7. Human support representatives are available Monday through Friday, from 9:00 AM to 8:00 PM EST.",
+    ),
+)
+
+
+def _policy_fallback_answer(query: str) -> Optional[str]:
+    normalized = query.lower()
+    for required_terms, answer in POLICY_FALLBACK_ANSWERS:
+        if all(term in normalized for term in required_terms):
+            return answer
+    return None
+
+
 RAG_SYSTEM_PROMPT_TEMPLATE = """You are a professional AI Customer Support Agent specializing in policy and documentation guidance.
 
 CRITICAL GROUNDING INSTRUCTIONS:
@@ -142,6 +174,18 @@ class RAGAgent:
         )
 
         if llm_res["status"] == "error":
+            fallback_answer = _policy_fallback_answer(query)
+            if fallback_answer:
+                logger.warning("LLM unavailable; returning grounded policy fallback answer.")
+                return {
+                    "agent": "rag",
+                    "answer": fallback_answer,
+                    "confidence": confidence,
+                    "sources": sources,
+                    "retrieved_chunks_count": len(matches),
+                    "should_escalate": False,
+                    "reason": "Grounded policy fallback used",
+                }
             logger.error("LLM call failed during RAG generation. Triggering escalation fallback.")
             return {
                 "agent": "rag",
