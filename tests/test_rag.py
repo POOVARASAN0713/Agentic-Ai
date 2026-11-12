@@ -6,7 +6,7 @@ Tests document-grounded policy retrieval, source tracking, threshold filtering, 
 import pytest
 from utils.document_loader import load_policy_documents, chunk_documents
 from utils.vectorstore import vector_store
-from agents.rag_agent import rag_agent, process_rag_query
+from agents.rag_agent import _is_policy_query, rag_agent, process_rag_query
 
 
 @pytest.fixture(scope="module", autouse=True)
@@ -57,3 +57,9 @@ def test_empty_rag_query():
     assert response["confidence"] == 0.0
     assert response["should_escalate"] is True
     assert response["answer"] == "Empty query provided."
+
+
+def test_policy_query_detection():
+    assert _is_policy_query("What are the international shipping rules?")
+    assert _is_policy_query("What are the support working hours?")
+    assert not _is_policy_query("Where is my order?")

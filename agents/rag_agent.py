@@ -12,6 +12,24 @@ from utils.logging_utils import get_logger
 
 logger = get_logger("RAGAgent")
 
+POLICY_QUERY_MARKERS = (
+    "policy",
+    "warranty",
+    "coverage",
+    "rules",
+    "required",
+    "requirements",
+    "working hours",
+    "support hours",
+    "international shipping",
+)
+
+
+def _is_policy_query(query: str) -> bool:
+    normalized = query.lower()
+    return any(marker in normalized for marker in POLICY_QUERY_MARKERS)
+
+
 RAG_SYSTEM_PROMPT_TEMPLATE = """You are a professional AI Customer Support Agent specializing in policy and documentation guidance.
 
 CRITICAL GROUNDING INSTRUCTIONS:
@@ -70,6 +88,10 @@ class RAGAgent:
 
         if any(ord(character) > 127 for character in query):
             active_threshold = min(active_threshold, config.MULTILINGUAL_RAG_THRESHOLD)
+        if _is_policy_query(query):
+            # Policy wording can score lower against large mixed document chunks,
+            # even when the matching section is present and grounded.
+            active_threshold = min(active_threshold, 0.50)
 
         # 1. Retrieve top document chunks from ChromaDB
         matches = vector_store.search_documents(query=query.strip(), top_k=active_top_k)
