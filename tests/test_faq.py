@@ -68,3 +68,14 @@ def test_non_english_faq_answer_is_translated(monkeypatch):
 
     assert response["should_escalate"] is False
     assert response["answer"] == "உங்கள் கடவுச்சொல்லை மீட்டமைக்கலாம்."
+
+
+def test_non_english_faq_never_returns_english_translation(monkeypatch):
+    def english_answer(**_kwargs):
+        return {"status": "success", "content": "Go to My Orders and click Cancel Order."}
+
+    monkeypatch.setattr("agents.faq_agent.llm_manager.invoke", english_answer)
+    response = process_faq_query("எனது ஆர்டரை ரத்து செய்வது எப்படி?")
+
+    assert response["should_escalate"] is False
+    assert any("\u0b80" <= character <= "\u0bff" for character in response["answer"])

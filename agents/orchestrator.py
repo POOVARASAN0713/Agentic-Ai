@@ -5,7 +5,7 @@ from typing import Any, Callable, Dict, List, Optional, TypedDict
 from langgraph.graph import END, START, StateGraph
 
 from agents.escalation_agent import process_escalation_query
-from agents.faq_agent import process_faq_query
+from agents.faq_agent import detect_query_language, process_faq_query
 from agents.guardrails import validate_response
 from agents.rag_agent import process_rag_query
 from utils.document_loader import chunk_documents, load_faqs, load_policy_documents
@@ -18,6 +18,16 @@ GREETING_RESPONSES = {
     "hi": "Hi! How can I help you with your online order, delivery, return, refund, or account?",
     "hello": "Hello! How can I help you with your online order, delivery, return, refund, or account?",
     "hey": "Hey! How can I help you today?",
+}
+
+LOCALIZED_GREETING_RESPONSES = {
+    "ta": "வணக்கம்! உங்கள் ஆர்டர், டெலிவரி, ரிட்டர்ன், ரீஃபண்ட் அல்லது கணக்கு தொடர்பாக நான் எவ்வாறு உதவலாம்?",
+    "hi": "नमस्ते! मैं आपके ऑर्डर, डिलीवरी, रिटर्न, रिफंड या अकाउंट में कैसे मदद कर सकता हूँ?",
+}
+
+LOCALIZED_GREETING_KEYS = {
+    "வணக்கம்": "ta",
+    "नमस्ते": "hi",
 }
 
 
@@ -179,7 +189,14 @@ class SupportOrchestrator:
                     ),
                 }
             )["response"]
-        greeting = GREETING_RESPONSES.get(clean_query.lower().rstrip("!?."))
+        language = detect_query_language(clean_query)
+        normalized_query = clean_query.lower().rstrip("!?.").strip()
+        greeting = GREETING_RESPONSES.get(normalized_query, "")
+        greeting_language = LOCALIZED_GREETING_KEYS.get(normalized_query)
+        if greeting_language:
+            greeting = LOCALIZED_GREETING_RESPONSES[greeting_language]
+        if greeting and language in LOCALIZED_GREETING_RESPONSES:
+            greeting = LOCALIZED_GREETING_RESPONSES[language]
         if greeting:
             return self._guardrails_node(
                 {
